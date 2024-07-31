@@ -123,7 +123,42 @@ body {
   color: initial;
 }
 
-@media screen and (max-width: 787px) {
+@media screen and (max-width: 1024px) {
+  .hero-setBg {
+    background-color: rgba(158, 158, 158, 0.0862745098);
+    padding: 4rem 0 3rem;
+  }
+  .hero-setBg .hero-section_flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-section-1 .hidden-sm {
+    display: block;
+  }
+  .hero-section-1 h1 {
+    line-height: 1.2;
+    width: 80%;
+  }
+  .hero-section-1 p {
+    width: 100%;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  .hero-section-1 .h-hero_btns {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .h-home-area {
+    margin-top: 1rem;
+  }
+  .h-home-area .h-home-right-title {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+}
+@media screen and (max-width: 992px) {
   .hero-setBg {
     background-color: rgba(158, 158, 158, 0.0862745098);
     padding: 1rem 0 3rem;
@@ -153,31 +188,26 @@ body {
     margin: 0.5rem 0;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 787px) {
   .hero-setBg {
     background-color: rgba(158, 158, 158, 0.0862745098);
-    padding: 4rem 0 3rem;
-  }
-  .hero-setBg .hero-section_flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 1rem 0 3rem;
   }
   .hero-section-1 .hidden-sm {
     display: block;
   }
   .hero-section-1 h1 {
     line-height: 1.2;
-    width: 80%;
+    width: 100%;
+    text-align: center;
   }
   .hero-section-1 p {
     width: 100%;
-    line-height: 1.6;
-    font-size: 16px;
+    text-align: center;
   }
   .hero-section-1 .h-hero_btns {
     display: flex;
-    gap: 20px;
+    justify-content: center;
     align-items: center;
   }
   .h-home-area {
