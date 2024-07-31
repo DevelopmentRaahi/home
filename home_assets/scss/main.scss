@@ -58,11 +58,88 @@ $add_cart_color: #faa200;
 $heading_top_color: rgb(102 102 102);
 $one_two_three_color :rgb(255 89 18);
 
+$heading-color:#003666;
+$h-para:#666666;
+$h-yellow:#fab400;
+$h-black:#333333;
+
 .btn-design {
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.288);
 }
 
 //hero section 
+.carousel-inner{
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    .s-overlays{
+        position: absolute;
+        top: 0;
+        background-color: #000000bb;
+        height: 100%;
+        width: 100vw;
+    }
+    .s-container{
+        position: absolute;
+        z-index: 2;
+        top: 20% ;
+        left: 50%;
+        
+        transform: translateX(-50%);
+        // background-color:#dad7d7;
+        &:not(:first-child) >*{
+            margin-bottom: 1.6rem;
+        }
+
+        .s-title h2{
+            color: #fff;
+            font-size: 6.5rem;
+            line-height: 1.2;
+        }
+        .s-description{
+            color:#ffffffd0;
+            font-weight:normal;
+            font-size: 1.4rem;
+        }
+        .s-ul_list{
+            ul{
+                list-style: square;
+                color: lighten($color: $h-yellow, $amount:20);
+                padding: 0rem 2rem;
+
+                li{
+                  font-size: 1.2rem; 
+                  margin-bottom: 1rem; 
+                }
+            }
+        }
+        .s-btn{
+            a{
+                text-decoration: none;
+                font-size: 18px;
+                background-color: $h-yellow;
+                border: 1px solid #ff7d7d;
+                padding: 5px 10px;
+                color: #2c2c2c;
+                border-radius: 2px;
+
+                &:hover{
+                    color: #fff;
+                    background-color:transparent;
+                    
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+// one section complete
 $h_feature: 30px;
 $h-font: 19px;
 $h-content:14px;

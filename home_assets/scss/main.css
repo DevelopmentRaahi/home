@@ -35,6 +35,60 @@ body {
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.288);
 }
 
+.carousel-inner {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+.carousel-inner .s-overlays {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7333333333);
+  height: 100%;
+  width: 100vw;
+}
+.carousel-inner .s-container {
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.carousel-inner .s-container:not(:first-child) > * {
+  margin-bottom: 1.6rem;
+}
+.carousel-inner .s-container .s-title h2 {
+  color: #fff;
+  font-size: 6.5rem;
+  line-height: 1.2;
+}
+.carousel-inner .s-container .s-description {
+  color: rgba(255, 255, 255, 0.8156862745);
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+.carousel-inner .s-container .s-ul_list ul {
+  list-style: square;
+  color: #ffd361;
+  padding: 0rem 2rem;
+}
+.carousel-inner .s-container .s-ul_list ul li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.carousel-inner .s-container .s-btn a {
+  text-decoration: none;
+  font-size: 18px;
+  background-color: #fab400;
+  border: 1px solid #ff7d7d;
+  padding: 5px 10px;
+  color: #2c2c2c;
+  border-radius: 2px;
+}
+.carousel-inner .s-container .s-btn a:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
 .hero-setBg {
   background-color: rgba(158, 158, 158, 0.0862745098);
   padding: 3rem 0 5rem;
@@ -842,7 +896,7 @@ body {
   text-align: center;
   font-size: 2.3rem;
   font-weight: 600;
-  color: rgb(47, 78, 126);
+  color: #003666;
 }
 
 @media screen and (max-width: 767px) {
@@ -871,7 +925,7 @@ body {
   padding: 0.2rem 0rem 0rem 1rem;
 }
 .desc_section_bg .first_section_para h2 {
-  color: rgb(47, 78, 126);
+  color: #003666;
   font-weight: 800;
   padding: 0.5rem 0rem;
 }
@@ -1199,7 +1253,7 @@ body {
   text-align: center;
 }
 .offer_section_bg .main-box-1 h2 {
-  color: rgb(47, 78, 126);
+  color: #003666;
   font-weight: 600;
   font-size: 2.3rem;
 }
@@ -1249,7 +1303,7 @@ body {
   text-align: center;
   font-size: 2.4rem;
   font-weight: 600;
-  color: rgb(47, 78, 126);
+  color: #003666;
 }
 .price_end > * {
   margin-top: 1.3rem;
@@ -1516,7 +1570,7 @@ body {
   text-align: center;
 }
 .main_box-1 h2 {
-  color: rgb(47, 78, 126);
+  color: #003666;
   font-weight: 600;
   font-size: 2.3rem;
 }
