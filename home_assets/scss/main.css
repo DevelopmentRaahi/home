@@ -75,18 +75,33 @@ body {
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
+.carousel-inner .s-container .s-btn {
+  padding: 2px;
+}
 .carousel-inner .s-container .s-btn a {
   text-decoration: none;
   font-size: 18px;
-  background-color: #fab400;
+  font-weight: normal;
+  background-color: #FFF;
   border: 1px solid #ff7d7d;
-  padding: 5px 10px;
-  color: #2c2c2c;
+  padding: 10px 15px;
+  color: #151515;
   border-radius: 2px;
+  overflow-x: hidden;
+  transition: background-color 0.5s;
 }
 .carousel-inner .s-container .s-btn a:hover {
   color: #fff;
   background-color: transparent;
+  transition: background-color 0.6s;
+}
+.carousel-inner .s-container .s-btn a span {
+  display: inline-block;
+  transition: transform 0.3s;
+  position: relative;
+}
+.carousel-inner .s-container .s-btn a:hover span {
+  transform: translateX(8px);
 }
 
 .hero-setBg {
